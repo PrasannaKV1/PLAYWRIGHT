@@ -1,0 +1,35 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://newdbthree.thetopschool.com/');
+  await page.getByRole('button', { name: 'Log in as Admin' }).click();
+  await page.getByRole('textbox', { name: 'Username' }).click();
+  await page.getByRole('textbox', { name: 'Username' }).fill('dbthree05');
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Password' }).fill('T');
+  await page.getByRole('textbox', { name: 'Password' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Test@12345');
+  await page.getByRole('textbox', { name: 'Password' }).press('Enter');
+  await page.getByRole('button', { name: 'Log In' }).click();
+  await page.getByRole('link', { name: 'Users' }).click();
+  await page.getByLabel('Add teacher(s)').click();
+  await page.getByRole('textbox', { name: 'Full Name*' }).click();
+  await page.getByRole('textbox', { name: 'Full Name*' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Full Name*' }).click();
+  await page.getByRole('textbox', { name: 'Full Name*' }).fill('P');
+  await page.getByRole('textbox', { name: 'Full Name*' }).press('CapsLock');
+  await page.getByRole('textbox', { name: 'Full Name*' }).fill('Prasanna');
+  await page.getByRole('textbox', { name: 'Email Address*' }).click();
+  await page.getByRole('textbox', { name: 'Email Address*' }).fill('prasannakv@gmailo');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowLeft');
+  await page.getByRole('textbox', { name: 'Email Address*' }).press('ArrowRight');
+  await page.getByRole('textbox', { name: 'Email Address*' }).fill('@gmailo');
+  await page.getByText('New Teacher AccountBasic').click();
+});
