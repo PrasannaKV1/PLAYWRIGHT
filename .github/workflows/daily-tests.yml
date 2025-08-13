@@ -1,40 +1,46 @@
-name: Daily Playwright Tests
+name: Daily Playwright Tests with Email
 
 on:
   schedule:
     - cron: "0 2 * * *"  # Runs daily at 2:00 AM UTC
-  workflow_dispatch:      # Allow manual run from GitHub UI
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout your repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Step 5: Run Playwright tests
       - name: Run Playwright tests
         run: npx playwright test --reporter=html
 
-      # Step 6: Upload HTML test report
-      - name: Upload HTML Report
-        uses: actions/upload-artifact@v3
+      # Zip the HTML report so it can be emailed
+      - name: Zip HTML report
+        run: zip -r playwright-report.zip playwright-report
+
+      # Send email with the report
+      - name: Send Email with Report
+        uses: dawidd6/action-send-mail@v3
         with:
-          name: playwright-html-report
-          path: playwright-report
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.prasannakv936@gmail.com}}
+          password: ${{ secrets.95351753334}}
+          subject: "Daily Playwright Test Report"
+          body: "Attached is the latest Playwright test execution report."
+          to: "prasannakv936@gmail.com"
+          from: "Playwright Automation <your_email@example.com>"
+          attachments: "playwright-report.zip"
