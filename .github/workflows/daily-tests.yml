@@ -39,8 +39,8 @@
           with:
             server_address: smtp.gmail.com
             server_port: 587
-            username: ${{ secrets.prasannakv936@gmail.com}}
-            password: ${{ secrets.95351753334}}
+            username: ${{ secrets.EMAIL_USERNAME}}
+            password: ${{ secrets.EMAIL_PASSWORD }}
             subject: "Daily Playwright Test Report"
             body: "Attached is the latest Playwright test execution report."
             to: "prasannakv936@gmail.com"
