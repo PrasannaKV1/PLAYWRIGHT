@@ -14,5 +14,5 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Go to My School' }).click();
   await page.getByText('Academic Setup').click();
   await page.getByRole('tab', { name: 'Grades and subject' }).click();
-  //await page.getByText('Go back Save Changes').click();
+  await page.getByText('Go back Save Changes').click();
 });
