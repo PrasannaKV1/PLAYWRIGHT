@@ -5,17 +5,11 @@ on:
     branches:
       - main
       - master
-    paths:
-      - 'playwright.yml'
-      - 'daily-tests.yml'
 
   pull_request:
     branches:
       - main
       - master
-    paths:
-      - 'playwright.yml'
-      - 'daily-tests.yml'
 
 jobs:
   test:
