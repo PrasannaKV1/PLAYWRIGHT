@@ -18,7 +18,7 @@ export default defineConfig({
       {
         host: process.env.MAIL_HOST,
         port: Number(process.env.MAIL_PORT),
-        secure: process.env.MAIL_SECURE === "true", // convert string to boolean
+        secure: process.env.MAIL_SECURE === "false", // convert string to boolean
         username: process.env.MAIL_USERNAME,
         password: process.env.MAIL_PASSWORD,
         from: process.env.MAIL_FROM,
