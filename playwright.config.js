@@ -12,7 +12,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   reporter: [
-    ["html"], // Local HTML report
+    ["html"],["line"],["allure-playwright"], // Local HTML reportreporter: [["line"], ["allure-playwright"]],
     [
       "playwright-mail-reporter",
       {
