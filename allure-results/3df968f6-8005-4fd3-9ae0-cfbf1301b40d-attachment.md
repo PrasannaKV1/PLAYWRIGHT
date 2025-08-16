@@ -1,0 +1,47 @@
+# Page snapshot
+
+```yaml
+- text: New Teacher Account
+- tablist "scrollable auto tabs example":
+  - tab "Basic Details" [selected]
+  - tab "Academic Details"
+  - tab "Sections & Subjects"
+- tabpanel "Basic Details":
+  - paragraph:
+    - text: Upload profile picture
+    - button "Choose File"
+    - text: "Format: jpeg/jpg/png Size: Max 5MB Personal Details Full Name*"
+    - textbox "Full Name*"
+    - alert: Required
+    - text: Email Address*
+    - textbox "Email Address*": prasannakv@gmail.com
+    - text: Date of Birth*
+    - textbox "Date of Birth*": 12/08/2025
+    - button "Choose date, selected date is Aug 12, 2025"
+    - text: Gender*
+    - combobox "Male"
+    - text: Contact Number*
+    - textbox "Contact Number*"
+    - alert: Required
+    - text: Blood Group
+    - combobox "Gender* ShowingAll Teachers"
+    - text: Emergency Contact + Add emergency contact Employee Details Employee ID
+    - textbox "Employee ID"
+    - text: Designation
+    - textbox "Designation"
+    - text: Date Of Joining
+    - textbox "Date Of Joining"
+    - button "Choose date"
+    - text: Address Details Address Line 1*
+    - textbox "Address Line 1*": sdhshdd
+    - text: Address Line 2
+    - textbox "Address Line 2"
+    - text: Pincode*
+    - textbox "Pincode*": "577589"
+    - text: State*
+    - textbox "State*" [disabled]: Karnataka
+    - text: City*
+    - textbox "City*" [disabled]: Harihar
+    - button "Continue"
+    - text: Cancel
+```

@@ -1,0 +1,310 @@
+# Page snapshot
+
+```yaml
+- main:
+  - link:
+    - /url: /admin/dashboard
+    - img
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: /admin/dashboard
+    - listitem:
+      - link "Users":
+        - /url: /admin/teacherStudent
+    - listitem:
+      - link "School":
+        - /url: /admin/school
+    - listitem:
+      - link "Calendar":
+        - /url: /admin/calendarEnhance
+    - listitem: Assessment
+    - listitem:
+      - link "Content Library":
+        - /url: /admin/content/contentlibrary
+    - listitem: Reports
+    - listitem:
+      - link "Approvals":
+        - /url: /admin/teacher-inquiry/lesson
+    - listitem: Fee Management
+    - listitem: Admission Management
+    - listitem:
+      - link "Template Management":
+        - /url: /erp/template
+    - listitem: Visitor Register
+    - listitem: Communication Engine
+  - list:
+    - listitem:
+      - link "engageHub Engage Hub New!":
+        - /url: /admin/announcements/ongoing
+        - img "engageHub"
+        - text: Engage Hub New!
+    - listitem: Notification
+    - listitem: My Profile
+    - listitem:
+      - img "Logout"
+      - text: Logout
+  - paragraph: Users List
+  - combobox "Academic Year:"
+  - tablist "basic tabs example":
+    - tab "Teachers" [selected]
+    - tab "Students"
+    - tab "Other Staff"
+  - tabpanel "Teachers":
+    - paragraph:
+      - text: Search Teacher... 
+      - searchbox "Search Teacher..."
+      - combobox "ShowingAll Teachers"
+      - button "Workload Thresholds":
+        - img
+        - text: Workload Thresholds
+      - button "Bulk Upload":
+        - img
+      - table "sticky table":
+        - rowgroup:
+          - row "select all students NAME & USER ID SUBJECTS CLASSES CLASS TEACHER ACTIONS":
+            - columnheader "select all students":
+              - checkbox "select all students"
+            - columnheader "NAME & USER ID"
+            - columnheader "SUBJECTS"
+            - columnheader "CLASSES"
+            - columnheader "CLASS TEACHER"
+            - columnheader "ACTIONS"
+        - rowgroup:
+          - row "Tr Marina Mendes trmarinamendes achievement 0 English Balbharati,मराठी सुलभभारती,+30 Grade 7 - A,Grade 6 - A,+8 N/A":
+            - cell:
+              - checkbox
+            - cell "Tr Marina Mendes trmarinamendes achievement 0":
+              - paragraph: Tr Marina Mendes
+              - paragraph: trmarinamendes
+              - img "achievement"
+              - text: "0"
+            - cell "English Balbharati,मराठी सुलभभारती,+30"
+            - cell "Grade 7 - A,Grade 6 - A,+8":
+              - paragraph: Grade 7 - A,Grade 6 - A,+8
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Tr Shruti Sawarkar trshrutisawarkar achievement 0 English Balbharati,मराठी सुलभभारती,+17 Grade 7 - A,Grade 6 - A,+1 Grade 7 - A":
+            - cell:
+              - checkbox
+            - cell "Tr Shruti Sawarkar trshrutisawarkar achievement 0":
+              - paragraph: Tr Shruti Sawarkar
+              - paragraph: trshrutisawarkar
+              - img "achievement"
+              - text: "0"
+            - cell "English Balbharati,मराठी सुलभभारती,+17"
+            - cell "Grade 7 - A,Grade 6 - A,+1":
+              - paragraph: Grade 7 - A,Grade 6 - A,+1
+            - cell "Grade 7 - A":
+              - paragraph: Grade 7 - A
+            - cell:
+              - img
+          - row "Tr Sanju trsanju achievement 0 मराठी सुलभभारती,Geography(SST),+11 Grade 6 - A,Grade 4 - A Grade 4 - A":
+            - cell:
+              - checkbox
+            - cell "Tr Sanju trsanju achievement 0":
+              - paragraph: Tr Sanju
+              - paragraph: trsanju
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Geography(SST),+11"
+            - cell "Grade 6 - A,Grade 4 - A":
+              - paragraph: Grade 6 - A,Grade 4 - A
+            - cell "Grade 4 - A":
+              - paragraph: Grade 4 - A
+            - cell:
+              - img
+          - row "Kuntala kuntala achievement 0 मराठी सुलभभारती,Civics,+20 Grade 7 - A,Grade 6 - A,+5 N/A":
+            - cell:
+              - checkbox
+            - cell "Kuntala kuntala achievement 0":
+              - paragraph: Kuntala
+              - paragraph: kuntala
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Civics,+20"
+            - cell "Grade 7 - A,Grade 6 - A,+5":
+              - paragraph: Grade 7 - A,Grade 6 - A,+5
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Naveen naveen achievement 0 मजेत शिकूया मराठी,Hindi,+35 Grade 1 - A,Grade 7 - A,+13 Grade 5 - A":
+            - cell:
+              - checkbox
+            - cell "Naveen naveen achievement 0":
+              - paragraph: Naveen
+              - paragraph: naveen
+              - img "achievement"
+              - text: "0"
+            - cell "मजेत शिकूया मराठी,Hindi,+35"
+            - cell "Grade 1 - A,Grade 7 - A,+13":
+              - paragraph: Grade 1 - A,Grade 7 - A,+13
+            - cell "Grade 5 - A":
+              - paragraph: Grade 5 - A
+            - cell:
+              - img
+          - row "Neel neel achievement 0 मराठी सुलभभारती,Civics,+15 Grade 7 - A,Grade 6 - A,+3 N/A":
+            - cell:
+              - checkbox
+            - cell "Neel neel achievement 0":
+              - paragraph: Neel
+              - paragraph: neel
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Civics,+15"
+            - cell "Grade 7 - A,Grade 6 - A,+3":
+              - paragraph: Grade 7 - A,Grade 6 - A,+3
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Online Test Teacher onlinetestteacher achievement 0 मराठी सुलभभारती,Civics,+15 Grade 7 - A,Grade 6 - A,+5 N/A":
+            - cell:
+              - checkbox
+            - cell "Online Test Teacher onlinetestteacher achievement 0":
+              - paragraph: Online Test Teacher
+              - paragraph: onlinetestteacher
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Civics,+15"
+            - cell "Grade 7 - A,Grade 6 - A,+5":
+              - paragraph: Grade 7 - A,Grade 6 - A,+5
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Tr Kshama Swant trkshamaswant achievement 0 मराठी सुलभभारती,Civics,+8 Grade 7 - A N/A":
+            - cell:
+              - checkbox
+            - cell "Tr Kshama Swant trkshamaswant achievement 0":
+              - paragraph: Tr Kshama Swant
+              - paragraph: trkshamaswant
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Civics,+8"
+            - cell "Grade 7 - A":
+              - paragraph: Grade 7 - A
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Tr Prasad Pol trprasadpol achievement 0 Civics,Geography,+2 Grade 7 - A,Grade 8 - A N/A":
+            - cell:
+              - checkbox
+            - cell "Tr Prasad Pol trprasadpol achievement 0":
+              - paragraph: Tr Prasad Pol
+              - paragraph: trprasadpol
+              - img "achievement"
+              - text: "0"
+            - cell "Civics,Geography,+2"
+            - cell "Grade 7 - A,Grade 8 - A":
+              - paragraph: Grade 7 - A,Grade 8 - A
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Aditya Shah adityashah achievement 0 Hindi,English,+20 Grade 1 - A,Grade 7 - A,+8 Grade 6 - A":
+            - cell:
+              - checkbox
+            - cell "Aditya Shah adityashah achievement 0":
+              - paragraph: Aditya Shah
+              - paragraph: adityashah
+              - img "achievement"
+              - text: "0"
+            - cell "Hindi,English,+20"
+            - cell "Grade 1 - A,Grade 7 - A,+8":
+              - paragraph: Grade 1 - A,Grade 7 - A,+8
+            - cell "Grade 6 - A":
+              - paragraph: Grade 6 - A
+            - cell:
+              - img
+          - row "naina naina achievement 0 मराठी सुलभभारती,Civics,+18 Grade 7 - A,Grade 8 - A,+3 Grade 7 - B":
+            - cell:
+              - checkbox
+            - cell "naina naina achievement 0":
+              - paragraph: naina
+              - paragraph: naina
+              - img "achievement"
+              - text: "0"
+            - cell "मराठी सुलभभारती,Civics,+18"
+            - cell "Grade 7 - A,Grade 8 - A,+3":
+              - paragraph: Grade 7 - A,Grade 8 - A,+3
+            - cell "Grade 7 - B":
+              - paragraph: Grade 7 - B
+            - cell:
+              - img
+          - row "TestTR testtr achievement 0 मजेत शिकूया मराठी Grade 1 - B N/A":
+            - cell:
+              - checkbox
+            - cell "TestTR testtr achievement 0":
+              - paragraph: TestTR
+              - paragraph: testtr
+              - img "achievement"
+              - text: "0"
+            - cell "मजेत शिकूया मराठी"
+            - cell "Grade 1 - B":
+              - paragraph: Grade 1 - B
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "avsdwhja avsdwhja achievement 0 मजेत शिकूया मराठी,Hindi,+7 Grade 1 - B N/A":
+            - cell:
+              - checkbox
+            - cell "avsdwhja avsdwhja achievement 0":
+              - paragraph: avsdwhja
+              - paragraph: avsdwhja
+              - img "achievement"
+              - text: "0"
+            - cell "मजेत शिकूया मराठी,Hindi,+7"
+            - cell "Grade 1 - B":
+              - paragraph: Grade 1 - B
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Akash Jha akashjha01 achievement 0 Hindi,Mathematics,+3 Grade 1 - A,Grade 7 - A,+5 N/A":
+            - cell:
+              - checkbox
+            - cell "Akash Jha akashjha01 achievement 0":
+              - paragraph: Akash Jha
+              - paragraph: akashjha01
+              - img "achievement"
+              - text: "0"
+            - cell "Hindi,Mathematics,+3"
+            - cell "Grade 1 - A,Grade 7 - A,+5":
+              - paragraph: Grade 1 - A,Grade 7 - A,+5
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+          - row "Teach check teachcheck achievement 0 Numeracy,EVS,+2 Lower KG - A N/A":
+            - cell:
+              - checkbox
+            - cell "Teach check teachcheck achievement 0":
+              - paragraph: Teach check
+              - paragraph: teachcheck
+              - img "achievement"
+              - text: "0"
+            - cell "Numeracy,EVS,+2"
+            - cell "Lower KG - A":
+              - paragraph: Lower KG - A
+            - cell "N/A":
+              - paragraph: N/A
+            - cell:
+              - img
+      - navigation "pagination navigation":
+        - list:
+          - listitem:
+            - button "Go to previous page" [disabled]
+          - listitem:
+            - button "page 1": "1"
+          - listitem:
+            - button "Go to page 2": "2"
+          - listitem:
+            - button "Go to next page"
+      - text: +
+```

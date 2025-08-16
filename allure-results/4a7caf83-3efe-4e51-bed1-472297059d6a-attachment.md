@@ -1,0 +1,220 @@
+# Page snapshot
+
+```yaml
+- main:
+  - link:
+    - /url: /admin/dashboard
+    - img
+  - list:
+    - listitem:
+      - link "Dashboard":
+        - /url: /admin/dashboard
+    - listitem:
+      - link "Users":
+        - /url: /admin/teacherStudent
+    - listitem:
+      - link "School":
+        - /url: /admin/school
+    - listitem:
+      - link "Calendar":
+        - /url: /admin/calendarEnhance
+    - listitem: Assessment
+    - listitem:
+      - link "Content Library":
+        - /url: /admin/content/contentlibrary
+    - listitem: Reports
+    - listitem:
+      - link "Approvals":
+        - /url: /admin/teacher-inquiry/lesson
+    - listitem: Fee Management
+    - listitem:
+      - link "Admission Management":
+        - /url: /admissions
+    - listitem:
+      - link "Template Management":
+        - /url: /erp/template
+    - listitem: Visitor Register
+    - listitem: Communication Engine
+  - list:
+    - listitem:
+      - link "engageHub Engage Hub New!":
+        - /url: /admin/announcements/ongoing
+        - img "engageHub"
+        - text: Engage Hub New!
+    - listitem: Notification
+    - listitem: My Profile
+    - listitem:
+      - img "Logout"
+      - text: Logout
+  - paragraph: Your Dashboard
+  - button "View Announcements"
+  - img
+  - heading "Friday 15 Aug 2025" [level=6]
+  - heading "Good Afternoon, dbthre !" [level=2]
+  - heading "Here’s an overview of your school, perform admin tasks in My School." [level=5]
+  - button "Go to My School"
+  - img
+  - heading "28" [level=4]
+  - paragraph: Total classes
+  - img
+  - heading "103" [level=4]
+  - paragraph: Total Students
+  - img
+  - heading "31" [level=4]
+  - paragraph: Total teachers
+  - img
+  - heading "10" [level=4]
+  - paragraph: Admins
+  - button "MARK STAFF ATTENDANCE"
+  - img
+  - paragraph: 5133/10000 SMS(s) available
+  - progressbar
+  - paragraph: 10312/15000 Email(s) available
+  - progressbar
+  - paragraph: View Plans
+  - text: Recent Achievements
+  - button "View All Achievements"
+  - tablist "lab API tabs example":
+    - tab "Teacher Achievements" [selected]
+    - tab "Student Achievements"
+  - tabpanel "Teacher Achievements":
+    - text: "Unlocked HomeWork Level #2"
+    - img "raju"
+    - text: raju Geography Grade 6 - A
+    - button "18 Badge"
+    - button "5 Day Streak":
+      - img
+      - text: 5 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked HomeWork Level #1"
+    - img "raju"
+    - text: raju Geography Grade 6 - A
+    - button "18 Badge"
+    - button "5 Day Streak":
+      - img
+      - text: 5 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked HomeWork Level #1"
+    - img "raju"
+    - text: raju History Grade 6 - A
+    - button "18 Badge"
+    - button "5 Day Streak":
+      - img
+      - text: 5 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked Chapter Challenge Level #1"
+    - img "crown"
+    - img "sanju"
+    - text: sanju Mathematics Grade 6 - A
+    - button "64 Badge"
+    - button "10 Day Streak":
+      - img
+      - text: 10 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked Curriculum Level #3"
+    - img "crown"
+    - img "sanju"
+    - text: sanju English Grade 6 - A
+    - button "64 Badge"
+    - button "10 Day Streak":
+      - img
+      - text: 10 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked Online Test Level #1"
+    - img "lakshmi"
+    - text: lakshmi History Grade 6 - Daffodil
+    - button "11 Badge"
+    - button "4 Day Streak":
+      - img
+      - text: 4 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+    - text: "Unlocked Online Test Level #1"
+    - img "lakshmi"
+    - text: lakshmi History Grade 6 - Demo
+    - button "11 Badge"
+    - button "4 Day Streak":
+      - img
+      - text: 4 Day Streak
+    - button "GO TO TEACHER ACHIEVEMENTS"
+  - paragraph: Site Analytics
+  - tablist "lab API tabs example":
+    - tab "Grade-Wise Attendance" [selected]
+    - tab "Content Performance"
+    - tab "Platform Usage Insights"
+    - tab "Overall Result"
+    - tab "Student Registrations"
+    - tab "Syllabus Completion"
+  - tabpanel "Grade-Wise Attendance"
+  - paragraph: Performance Insights
+  - heading "TOP PErformers" [level=4]
+  - combobox "Grade 12"
+  - combobox "Without label":
+    - emphasis: STUDENTS
+  - heading "No data found" [level=3]
+  - paragraph: Pending Actions
+  - paragraph: STUDENT LOGIN ID
+  - paragraph
+  - heading "Send Student login ID(s)" [level=6]
+  - paragraph: 51 Pending
+  - button "GO TO USERS"
+  - paragraph: LEAVE REQUEST APPROVAL
+  - paragraph
+  - heading "Approve Leave Request" [level=6]
+  - paragraph: 23 Pending
+  - button "VIEW REQUEST"
+  - paragraph: DAILY SUBSTITUTION
+  - paragraph
+  - heading "Complete substitution for today" [level=6]
+  - paragraph
+  - button "GO TO SUBSTITUTION"
+  - paragraph: LESSON PLAN APPROVALS
+  - paragraph
+  - heading "Approve Lesson Plan" [level=6]
+  - paragraph: 35 Pending
+  - button "GO TO LESSON PLANS"
+  - paragraph: CLASS CARD APPROVALS
+  - paragraph
+  - heading "Approve Class Card" [level=6]
+  - paragraph: 7 Pending
+  - button "GO TO CLASS CARDS"
+  - paragraph: PERIODIC FEEDBACK
+  - paragraph
+  - heading "Fill weekly Feedback form" [level=6]
+  - paragraph: Fri, 15 Aug ‘25
+  - button "GO TO FEEDBACK FORM"
+  - paragraph: SUPPORT TICKETS
+  - paragraph
+  - heading "Approve Support Tickets" [level=6]
+  - paragraph: 26 Pending
+  - button "GO TO SUPPORT TICKETS"
+  - paragraph: CURRICULUM PLAN APPROVALS
+  - paragraph
+  - heading "Approve Curriculum Plan" [level=6]
+  - paragraph: 1 Pending
+  - button "GO TO CURRICULUM PLANS"
+  - paragraph: TIMETABLE MANAGEMENT
+  - paragraph
+  - heading "Create Your Timetable" [level=6]
+  - paragraph: 19 Pending
+  - button "CREATE TIMETABLE"
+  - paragraph: STUDENT ONBOARDING
+  - paragraph
+  - heading "Complete Onboarding" [level=6]
+  - paragraph: 49 Pending
+  - button "GO TO USERS"
+  - paragraph: STUDENT ONBOARDING
+  - paragraph
+  - heading "Add Students to Class" [level=6]
+  - paragraph: 2 Pending
+  - button "GO TO USERS"
+  - paragraph: TEACHER ONBOARDING
+  - paragraph
+  - heading "Complete Onboarding" [level=6]
+  - paragraph: 6 Pending
+  - button "GO TO USERS"
+  - paragraph: SCHOOL INFRASTRUCTURE
+  - paragraph
+  - heading "Explore Our Infrastructure" [level=6]
+  - paragraph: 22 Pending
+  - button "GO TO INFRASTRUCTURE"
+```
